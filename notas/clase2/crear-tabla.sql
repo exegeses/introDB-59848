@@ -23,9 +23,9 @@ USE introDB;
 -- )
 CREATE TABLE billeteras
 (
-    id INT AUTO_INCREMENT,
-    nombre text,
-    precio FLOAT,
-    stock INT
-)
+    id int primary key auto_increment,
+    nombre varchar( 30 ),
+    precio float( 9, 2 ),
+    stock int
+);
 
