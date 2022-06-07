@@ -37,10 +37,10 @@ SELECT prdNombre, prdPrecio, mkNombre, catNombre
 -- Utilizando Alias para las tablas
 SELECT prdNombre, prdPrecio, mkNombre, catNombre
     FROM productos AS p
-             JOIN marcas AS m
-                  ON  p.idMarca = m.idMarca
-             JOIN categorias AS c
-                  ON  p.idCategoria = c.idCategoria
+         JOIN marcas AS m
+              ON  p.idMarca = m.idMarca
+         JOIN categorias AS c
+              ON  p.idCategoria = c.idCategoria
     WHERE p.idCategoria = 1;
 
 
